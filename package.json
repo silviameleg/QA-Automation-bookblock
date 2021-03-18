@@ -1,0 +1,32 @@
+{
+    "name": "qa-automation-bookblock",
+    "version": "1.0.0",
+    "description": "automated tests for boobkblock.com",
+    "main": "test.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "codeceptjs": "codeceptjs run --steps",
+        "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+        "codeceptjs:ui": "codecept-ui --app",
+        "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/silviameleg/QA-Automation-bookblock.git"
+    },
+    "author": "Silvia Meleg <silvia.meleg@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/silviameleg/QA-Automation-bookblock/issues"
+    },
+    "homepage": "https://github.com/silviameleg/QA-Automation-bookblock#readme",
+    "devDependencies": {
+        "@codeceptjs/configure": "^0.6.2",
+        "@codeceptjs/examples": "^1.2.1",
+        "@codeceptjs/ui": "^0.4.3",
+        "codeceptjs": "^3.0.5",
+        "playwright": "^1.9.2"
+    }
+}
