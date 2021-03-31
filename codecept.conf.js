@@ -5,31 +5,33 @@ const { setHeadlessWhen } = require('@codeceptjs/configure');
 setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
-  tests: './*_test.js',
-  output: './output',
-  helpers: {
-    Playwright: {
-      url: 'http://localhost',
-      show: true,
-      browser: 'chromium'
-    }
-  },
-  include: {
-    I: './steps_file.js'
-  },
-  bootstrap: null,
-  mocha: {},
-  name: 'QA-Automation-bookblock',
-  plugins: {
-    pauseOnFail: {},
-    retryFailedStep: {
-      enabled: true
+    tests: './*_test.js',
+    output: './output',
+    helpers: {
+        Playwright: {
+            url: 'https://www.bookblock.com/',
+            show: true,
+            browser: 'chromium'
+        }
     },
-    tryTo: {
-      enabled: true
+    include: {
+        I: './steps_file.js',
+        LoginPage: './pages/login.js',
+        tests: './tests',
     },
-    screenshotOnFail: {
-      enabled: true
+    bootstrap: null,
+    mocha: {},
+    name: 'QA-Automation-bookblock',
+    plugins: {
+        pauseOnFail: {},
+        retryFailedStep: {
+            enabled: true
+        },
+        tryTo: {
+            enabled: true
+        },
+        screenshotOnFail: {
+            enabled: true
+        }
     }
-  }
 }

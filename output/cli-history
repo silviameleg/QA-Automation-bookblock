@@ -1,0 +1,12 @@
+
+
+<<< Recorded commands on Wed Mar 31 2021 19:07:17 GMT+0300 (Ora de vară a Europei de Est)
+I.seeElementInDOM('//*[@id="login-form"]/div[5]/input')
+I.click('//*[@id="login-form"]/div[5]/input')
+
+<<< Recorded commands on Wed Mar 31 2021 19:19:26 GMT+0300 (Ora de vară a Europei de Est)
+I.seeElementInDOM("#user-nav-menu-head");
+
+<<< Recorded commands on Wed Mar 31 2021 19:46:35 GMT+0300 (Ora de vară a Europei de Est)
+I.click("My Account")
+I.seeElement(".logout-link")
