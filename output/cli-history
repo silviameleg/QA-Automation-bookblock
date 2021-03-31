@@ -10,3 +10,7 @@ I.seeElementInDOM("#user-nav-menu-head");
 <<< Recorded commands on Wed Mar 31 2021 19:46:35 GMT+0300 (Ora de vară a Europei de Est)
 I.click("My Account")
 I.seeElement(".logout-link")
+
+<<< Recorded commands on Wed Mar 31 2021 20:55:57 GMT+0300 (Ora de vară a Europei de Est)
+I.seeElement("#login-error")
+I.dontSeeElement(".logout-link");

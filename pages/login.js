@@ -16,6 +16,7 @@ class LoginPage {
         this.navigationMenu = "#user-nav-menu-head";
         this.myAccountMenu = "My Account";
         this.logoutBtn = ".logout-link";
+        this.loginErrorMessage = "#login-error";
     };
 
     goToLoginPage() {
@@ -37,6 +38,11 @@ class LoginPage {
         I.seeElementInDOM(this.navigationMenu);
         I.click(this.myAccountMenu);
         I.seeElement(this.logoutBtn);
+    };
+
+    checkUnsuccessfullLogin() {
+        I.seeElement("#login-error");
+        I.dontSeeElement(this.logoutBtn);
     };
 }
 
