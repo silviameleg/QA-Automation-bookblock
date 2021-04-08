@@ -1,7 +1,7 @@
-const LoginData = require("./DataProvider/loginCredentialsProvider.js");
+const LoginData = require("../DataProvider/loginCredentialsProvider.js");
 
 
-Feature("Authentification with valid/unvalid credentials");
+xFeature("Authentification with valid/unvalid credentials");
 
 Before(({ I }) => {
     I.amOnPage("/");

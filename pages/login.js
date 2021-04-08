@@ -22,6 +22,7 @@ class LoginPage {
     goToLoginPage() {
         I.seeElementInDOM(this.loginOption);
         I.click(this.loginOption);
+        I.seeElement(this.newUserLine);
         I.seeElement(this.loginWindow);
     };
 

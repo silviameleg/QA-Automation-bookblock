@@ -14,3 +14,25 @@ I.seeElement(".logout-link")
 <<< Recorded commands on Wed Mar 31 2021 20:55:57 GMT+0300 (Ora de vară a Europei de Est)
 I.seeElement("#login-error")
 I.dontSeeElement(".logout-link");
+
+<<< Recorded commands on Thu Apr 08 2021 10:54:57 GMT+0300 (Ora de vară a Europei de Est)
+I.click('//*[@id="login-modal-right"]/div[2]/div')
+I.seeElementInDOM("#register-form")
+I.seeElementInDOM("#register-form-step-1")
+I.seeElement("#register-form-step-1")
+
+<<< Recorded commands on Thu Apr 08 2021 11:04:22 GMT+0300 (Ora de vară a Europei de Est)
+I.seeElement('#ins-email-collection-adaptive')
+I.click('#icon-close-button-1454703945349')
+I.click('#login-account-link')
+I.seeElement('.logout-link')
+
+<<< Recorded commands on Thu Apr 08 2021 11:21:21 GMT+0300 (Ora de vară a Europei de Est)
+I.seeElement('#honeypot');
+I.dontSeeElement('.logout-link')
+
+<<< Recorded commands on Thu Apr 08 2021 11:27:37 GMT+0300 (Ora de vară a Europei de Est)
+I.seeElement('.error')
+
+<<< Recorded commands on Thu Apr 08 2021 11:31:02 GMT+0300 (Ora de vară a Europei de Est)
+I.seeElement('.error');
